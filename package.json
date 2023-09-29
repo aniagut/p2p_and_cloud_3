@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "npm run dist & npm run swagger-autogen & node ./bin/www",
-    "dist": "cd a3_frontend & & npm install & ng build & cd ..",
+    "dist": "cd a3_frontend & npm install & ng build & cd ..",
     "swagger-autogen": "node swagger.js"
   },
   "dependencies": {
