@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "npm run swagger-autogen & node ./bin/www",
+    "start": "npm run dist & npm run swagger-autogen & node ./bin/www",
+    "dist": "cd a3_frontend & ng build & cd ..",
     "swagger-autogen": "node swagger.js"
   },
   "dependencies": {
